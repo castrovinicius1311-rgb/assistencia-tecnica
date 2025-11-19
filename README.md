@@ -18,5 +18,5 @@ Site acompanha link de formulario para clientes que buscam ser atendidos o mais 
 - modelo da maquina
 - defeito que esta apresentando
 
-Para clientes que necessitam tirar duvidas ou tratar de outros assuntos, disponibilizamos um link de Whatsapp para contato direto com um de nossos atendentes.
+Para clientes que precisam tirar dúvidas ou tratar de outros assuntos, disponibilizamos um link de Whatsapp para contato direto com um de nossos atendentes.
   
