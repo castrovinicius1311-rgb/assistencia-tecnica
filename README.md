@@ -7,7 +7,7 @@ Assistencia técnica especializada em manutencões de lava e seca dos seguintes 
 - SAMSUNG
 - MIDEA
 
-Atendendo todas as regiões de São Paulo com técnicos altamente qualificados 
+Atendendo todas as regiões de São Paulo com técnicos qualificados 
 
 Site acompanha link de formulario para clientes que buscam ser atendidos o mais rapido possivel, tendo que preencher alguns dados basicos como por exemplo:
 
