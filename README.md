@@ -21,4 +21,4 @@ O site acompanha um link de formulário para clientes que buscam atendimento rá
 
 Para clientes que precisam tirar dúvidas ou tratar de outros assuntos, disponibilizamos um link de **WhatsApp** para contato direto com um de nossos atendentes.
 
-Também disponibilizamos **dicas de cuidados** para que sua máquina tenha uma durabilidade maior.
+Também disponibilizamos **dicas de cuidados** para que sua máquina tenha maior durabilidade.
