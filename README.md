@@ -1,22 +1,24 @@
-# assistencia-tecnica
+# Assistência Técnica
+
 **Site Assistência Técnica São Paulo Service**
 
-Assistencia técnica especializada em manutencões de lava e seca dos seguintes modelos:
+Assistência técnica especializada em manutenções de lava e seca dos seguintes modelos:
 
-- LG
-- SAMSUNG
-- MIDEA
+- **LG**
+- **Samsung**
+- **Midea**
 
-*Atendendo todas as regiões de São Paulo com técnicos qualificados*
+*Atendendo todas as regiões de São Paulo com técnicos qualificados.*
 
-Site acompanha link de formulario para clientes que buscam ser atendidos o mais rapido possivel, tendo que preencher alguns dados basicos como por exemplo:
+O site acompanha um link de formulário para clientes que buscam atendimento rápido, devendo preencher alguns dados básicos, como:
 
-- NOME
-- EMAIL
-- TELEFONE
-- ENDEREÇO
-- MODELO DO APARELHO
-- DEFEITO QUE ESTA APRESENTANDO
+- **Nome**
+- **E-mail**
+- **Telefone**
+- **Endereço**
+- **Modelo do aparelho**
+- **Defeito apresentado**
 
-Para clientes que precisam tirar dúvidas ou tratar de outros assuntos, disponibilizamos um link de Whatsapp para contato direto com um de nossos atendentes.
-  
+Para clientes que precisam tirar dúvidas ou tratar de outros assuntos, disponibilizamos um link de **WhatsApp** para contato direto com um de nossos atendentes.
+
+Também disponibilizamos **dicas de cuidados** para que sua máquina tenha uma durabilidade maior.
