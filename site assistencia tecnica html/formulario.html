@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Contato</title>
+  <style>
+    body {
+      background-color: #022142;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 1550px;
+      height: 1550px;
+      background-image: url('https://www.fusati.com.br/wp-content/uploads/2020/04/Reuso-agua-lavanderia-lucros-respeito-ambiental.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      opacity: 0.1;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    body > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      background-color: #eae1e1;
+      color: #022142;
+      padding: 20px;
+      text-align: center;
+    }
+
+    form {
+      background-color: #0a2a4f;
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .radio-group {
+      margin-top: 20px;
+      text-align: justify;
+    }
+
+    .radio-group p {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .radio-option {
+      margin-bottom: 10px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #f0ad4e;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ec971f;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #011528;
+    }
+
+    #erro {
+      background-color: #ff4d4d;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      display: none;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    /* Destaque do campo vazio */
+    .campo-erro {
+      border: 2px solid #ff4d4d !important;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>FORMULÁRIO DE CONTATO</h1>
+    <p>Preencha os campos abaixo para agendar uma visita.</p>
+  </header>
+
+  <form id="formContato">
+    
+    <div id="erro">⚠️ Preencha todos os campos obrigatórios antes de enviar.</div>
+
+    <label for="nome">Nome Completo:</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="number" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+
+    <label for="endereco">Seu Endereço:</label>
+    <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro" required>
+
+    <div class="radio-group">
+      <p>Qual o modelo da sua máquina?</p>
+      <div class="radio-option">
+        <input type="radio" id="LG" name="modelo_maquina" value="LG" required>
+        <label for="LG">LG</label>
+      </div>
+      <div class="radio-option">
+        <input type="radio" id="SAMSUNG" name="modelo_maquina" value="SAMSUNG">
+        <label for="SAMSUNG">SAMSUNG</label>
+      </div>
+      <div class="radio-option">
+        <input type="radio" id="MIDEA" name="modelo_maquina" value="MIDEA">
+        <label for="MIDEA">MIDEA</label>
+      </div>
+    </div>
+
+    <label for="mensagem">Qual defeito está apresentando?</label>
+    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva o problema..." required></textarea>
+
+    <button type="submit">Enviar Dados</button>
+    <button type="reset" style="background-color: #ccc; color: #000; margin-left: 10px;">Limpar Campos</button>
+  </form>
+
+  <footer>
+    <p>Obrigado por seu contato!</p>
+  </footer>
+
+<script>
+  document.getElementById("formContato").addEventListener("submit", function(event) {
+    let campos = document.querySelectorAll("input[required], textarea[required]");
+    let erro = document.getElementById("erro");
+    let valido = true;
+
+    campos.forEach(campo => {
+      campo.classList.remove("campo-erro");
+
+      if (!campo.value.trim()) {
+        valido = false;
+        campo.classList.add("campo-erro");
+      }
+    });
+
+    let radioValido = document.querySelector('input[name="modelo_maquina"]:checked');
+    if (!radioValido) {
+      valido = false;
+      erro.style.display = "block";
+    }
+
+    if (!valido) {
+      event.preventDefault();
+      erro.style.display = "block";
+    } else {
+      erro.style.display = "none";
+    }
+  });
+</script>
+
+</body>
+</html>
